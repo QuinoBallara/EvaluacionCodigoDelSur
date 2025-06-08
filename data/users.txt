@@ -1,0 +1,16 @@
+[
+  {
+    "id": "6131d685-131f-4bd4-8426-d7d2d0e9d7b4",
+    "email": "pepito@gmail.com",
+    "firstName": "pepito",
+    "lastName": "gonzales",
+    "password": "$2b$10$m244jbHicKtexxSM9L0SJ.WUDr.CQtvltMgoAte9pie1CdtGEb0fG"
+  },
+  {
+    "id": "856b6a8d-30ff-4f35-8896-4bece641e67c",
+    "email": "pepitoo@gmail.com",
+    "firstName": "pepito",
+    "lastName": "gonzales",
+    "password": "$2b$10$4auR9i0dBJBKj28Friir9eGE5XHgIfv9SC1QXsBAl.hu992lsWQUC"
+  }
+]
