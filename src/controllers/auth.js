@@ -3,8 +3,8 @@ const uuid = require('uuid');
 const jwt = require('jsonwebtoken');
 const { readJSON, writeJSON } = require('../helpers/fileHandler');
 
-const USERS_FILE = process.env.USERS_FILE || 'data/users.json';
-const SECRET_KEY = process.env.SECRET_KEY
+const USERS_FILE = process.env.USERS_FILE || 'data/users.txt';
+const SECRET_KEY = process.env.JWT_SECRET_KEY
 
 async function register(req, res, next) {
     try {
