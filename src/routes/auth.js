@@ -32,7 +32,6 @@ router.post('/auth/register', [
  * @returns {object} 401 - Invalid email or password
  * @returns {object} 500 - Internal server error
  */
-
 router.post('/auth/login', [
     body('email').isEmail().withMessage('Invalid email format'),
     body('password').notEmpty().withMessage('Password is required')

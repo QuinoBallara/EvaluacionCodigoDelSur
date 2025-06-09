@@ -5,6 +5,8 @@ async function getMovies(req, res, next) {
     try {
         const searchQuery = req.query.search || '';
         const keyword = searchQuery.trim();
+        console.log('Search Query:', searchQuery);
+        console.log('Keyword:', keyword);
         let response = {};
         if (searchQuery) {
             response = await axios.get(
