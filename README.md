@@ -38,3 +38,8 @@ npm start
 ```
 
 De forma predeterminada, la API estará disponible en `http://localhost:3000`.
+
+## Postman
+
+Puedes importar la colección de Postman desde el archivo `endpoints.postman_collection` incluido en el proyecto.
+Esta colección contiene ejemplos de todas las rutas disponibles en la API. La colección no incluye un token de autenticación, por lo que deberás generar uno utilizando la ruta de login.
