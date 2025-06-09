@@ -28,6 +28,9 @@ Joaquín Ballara
     MOVIES_FILE= Ruta al archivo de películas (opcional, por defecto `./data/movies.txt`)
     ```
 
+> [!Recomendación]
+> Solo es necesario definir `JWT_SECRET_KEY` y `TMDB_API_KEY`.
+
 ## Ejecutar la API
 Para iniciar el servidor, ejecuta:
 ```bash
