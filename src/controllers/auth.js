@@ -5,6 +5,7 @@ const { readJSON, writeJSON } = require('../helpers/fileHandler');
 
 const USERS_FILE = process.env.USERS_FILE || 'data/users.txt';
 const SECRET_KEY = process.env.JWT_SECRET_KEY
+const BLACKLIST_FILE = process.env.BLACKLIST_FILE || 'data/blacklist.txt';
 
 async function register(req, res, next) {
     try {
@@ -48,7 +49,7 @@ async function login(req, res, next) {
             return res.status(401).json({ error: 'Invalid email or password' });
         }
 
-        const token = jwt.sign({ id: user.id, email: user.email }, SECRET_KEY, {
+        const token = jwt.sign({ id: user.id, email: user.email, jti: uuid.v4() }, SECRET_KEY, {
             expiresIn: '48h'
         })
 
@@ -63,4 +64,27 @@ async function login(req, res, next) {
     }
 }
 
-module.exports = { register, login };
+async function logout(req, res, next) {
+    try {
+        const token = req.headers['authorization']?.split(' ')[1];
+        if (!token) {
+            return res.status(401).json({ message: 'No token provided' });
+        }
+
+        const jti = jwt.decode(token).jti;
+        const blacklist = readJSON(BLACKLIST_FILE);
+
+        if (!blacklist.includes(jti)) {
+            blacklist.push(jti);
+            writeJSON(BLACKLIST_FILE, blacklist);
+        }
+
+        res.status(200).json({ message: 'Logout successful' });
+    }
+    catch (error) {
+        console.error('Logout error:', error);
+        next(error);
+    }
+}
+
+module.exports = { register, login, logout };
