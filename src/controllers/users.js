@@ -44,7 +44,24 @@ async function addFavoriteMovie(req, res, next) {
     const movies = readJSON(MOVIES_FILE);
     const movieExists = movies.some(movie => movie.id === movieData.id);
     if (!movieExists) {
-        movies.push(movieData);
+        const new_movie = {
+            backdrop_path: movieData.backdrop_path,
+            id: movieData.id,
+            title: movieData.title,
+            original_title: movieData.original_title,
+            overview: movieData.overview,
+            poster_path: movieData.poster_path,
+            media_type: movieData.media_type || 'movie',
+            adult: movieData.adult,
+            original_language: movieData.original_language,
+            genre_ids: movieData.genre_ids,
+            popularity: movieData.popularity,
+            release_date: movieData.release_date,
+            video: movieData.video,
+            vote_average: movieData.vote_average,
+            vote_count: movieData.vote_count
+        }
+        movies.push(new_movie);
         writeJSON(MOVIES_FILE, movies);
     }
     res.status(201).json({
@@ -54,10 +71,7 @@ async function addFavoriteMovie(req, res, next) {
 }
 
 async function getFavoriteMovies(req, res, next) {
-    const userId = req.params.userId;
-    if (!userId) {
-        return res.status(400).json({ error: 'User ID is required' });
-    }
+    const userId = req.userId;
 
     const favorites = readJSON(FAVORITES_FILE);
     const userFavorites = favorites.filter(fav => fav.userId === userId);
@@ -69,8 +83,14 @@ async function getFavoriteMovies(req, res, next) {
     const movies = readJSON(MOVIES_FILE);
     const favoriteMovies = userFavorites.map(fav => {
         const movie = movies.find(m => m.id === fav.movieId);
-        return movie ? { ...movie, addedAt: fav.addedAt } : null;
-    }).filter(movie => movie !== null);
+        if (!movie) return null;
+        return {
+            ...movie,
+            addedAt: fav.addedAt,
+            suggestionForTodayScore: Math.floor(Math.random() * 100)
+        };
+    }).filter(movie => movie !== null)
+        .sort((a, b) => b.suggestionForTodayScore - a.suggestionForTodayScore);
 
     res.status(200).json(favoriteMovies);
 }

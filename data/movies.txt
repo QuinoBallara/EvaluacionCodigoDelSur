@@ -1,96 +1,34 @@
 [
   {
+    "backdrop_path": "/w5IDXtifKntw0ajv2co7jFlTQDM.jpg",
+    "id": 62,
+    "title": "2001: A Space Odyssey",
+    "original_title": "2001: A Space Odyssey",
+    "overview": "Humanity finds a mysterious object buried beneath the lunar surface and sets off to find its origins with the help of HAL 9000, the world's most advanced super computer.",
+    "poster_path": "/ve72VxNqjGM69Uky4WTo2bK6rfq.jpg",
+    "media_type": "movie",
     "adult": false,
-    "backdrop_path": "/6WRrGYalXXveItfpnipYdayFkQB.jpg",
-    "belongs_to_collection": null,
-    "budget": 90000000,
-    "genres": [
-      {
-        "id": 18,
-        "name": "Drama"
-      },
-      {
-        "id": 53,
-        "name": "Thriller"
-      },
-      {
-        "id": 80,
-        "name": "Crime"
-      }
-    ],
-    "homepage": "http://thedeparted.com",
-    "id": 1422,
-    "imdb_id": "tt0407887",
-    "origin_country": [
-      "US"
-    ],
     "original_language": "en",
-    "original_title": "The Departed",
-    "overview": "To take down South Boston's Irish Mafia, the police send in one of their own to infiltrate the underworld, not realizing the syndicate has done likewise. While an undercover cop curries favor with the mob kingpin, a career criminal rises through the police ranks. But both sides soon discover there's a mole among them.",
-    "popularity": 9.9296,
-    "poster_path": "/nT97ifVT2J1yMQmeq20Qblg61T.jpg",
-    "production_companies": [
-      {
-        "id": 174,
-        "logo_path": "/zhD3hhtKB5qyv7ZeL4uLpNxgMVU.png",
-        "name": "Warner Bros. Pictures",
-        "origin_country": "US"
-      },
-      {
-        "id": 81,
-        "logo_path": "/8wOfUhA7vwU2gbPjQy7Vv3EiF0o.png",
-        "name": "Plan B Entertainment",
-        "origin_country": "US"
-      },
-      {
-        "id": 7380,
-        "logo_path": null,
-        "name": "Initial Entertainment Group",
-        "origin_country": "US"
-      },
-      {
-        "id": 829,
-        "logo_path": "/aXqwCvJSCDbTclkxAYfsT1l4Dsa.png",
-        "name": "Vertigo Entertainment",
-        "origin_country": "US"
-      },
-      {
-        "id": 5552,
-        "logo_path": "/kZB9yp7OoveJ8wdynDcZEDtTbB2.png",
-        "name": "Media Asia Films",
-        "origin_country": "HK"
-      }
-    ],
-    "production_countries": [
-      {
-        "iso_3166_1": "HK",
-        "name": "Hong Kong"
-      },
-      {
-        "iso_3166_1": "US",
-        "name": "United States of America"
-      }
-    ],
-    "release_date": "2006-10-04",
-    "revenue": 291465000,
-    "runtime": 151,
-    "spoken_languages": [
-      {
-        "english_name": "English",
-        "iso_639_1": "en",
-        "name": "English"
-      },
-      {
-        "english_name": "Cantonese",
-        "iso_639_1": "cn",
-        "name": "广州话 / 廣州話"
-      }
-    ],
-    "status": "Released",
-    "tagline": "Cops or criminals. When you’re facing a loaded gun, what’s the difference?",
-    "title": "The Departed",
+    "popularity": 9.1043,
+    "release_date": "1968-04-02",
     "video": false,
-    "vote_average": 8.159,
-    "vote_count": 15345
+    "vote_average": 8.1,
+    "vote_count": 11861
+  },
+  {
+    "backdrop_path": "/nAxGnGHOsfzufThz20zgmRwKur3.jpg",
+    "id": 1233413,
+    "title": "Sinners",
+    "original_title": "Sinners",
+    "overview": "Trying to leave their troubled lives behind, twin brothers return to their hometown to start again, only to discover that an even greater evil is waiting to welcome them back.",
+    "poster_path": "/jYfMTSiFFK7ffbY2lay4zyvTkEk.jpg",
+    "media_type": "movie",
+    "adult": false,
+    "original_language": "en",
+    "popularity": 553.0692,
+    "release_date": "2025-04-16",
+    "video": false,
+    "vote_average": 7.534,
+    "vote_count": 1293
   }
 ]

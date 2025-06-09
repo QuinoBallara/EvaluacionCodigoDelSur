@@ -1,9 +1,16 @@
 [
   {
-    "id": "5cbb570e-7ecd-4eb6-b480-455bd2faba34",
-    "email": "pepito@gmail.com",
-    "firstName": "pepito",
-    "lastName": "gonzales",
-    "password": "$2b$10$keRrk8RuQuNwD0Qd5yhtEe.YI2o6aOP6l3R1BLKPou3kKmNLodmra"
+    "id": "22f8cb75-11d5-402e-9b3e-945ec102d0d7",
+    "email": "robertitodeniro@gmail.com",
+    "firstName": "Robert",
+    "lastName": "De Niro",
+    "password": "$2b$10$q5YlWo2SfX0Dy3G3obZYLe4hYSDFBbWG9GZxx4OvBQSg4iA1MBAyO"
+  },
+  {
+    "id": "f5c96872-dcb9-4319-9c8e-d35d6195ece8",
+    "email": "damichazelle@gmail.com",
+    "firstName": "Damien",
+    "lastName": "Chazelle",
+    "password": "$2b$10$HVMLXAISxWr.Q1hLCX7jnOiJfO6w2FMH9mSh4WfQnHKOAiQVQcg2W"
   }
 ]
