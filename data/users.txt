@@ -1,0 +1,9 @@
+[
+  {
+    "id": "5cbb570e-7ecd-4eb6-b480-455bd2faba34",
+    "email": "pepito@gmail.com",
+    "firstName": "pepito",
+    "lastName": "gonzales",
+    "password": "$2b$10$keRrk8RuQuNwD0Qd5yhtEe.YI2o6aOP6l3R1BLKPou3kKmNLodmra"
+  }
+]

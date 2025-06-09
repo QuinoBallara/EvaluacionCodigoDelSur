@@ -1,0 +1,8 @@
+[
+  {
+    "id": "b5c25aab-6e98-4ab1-b78f-140668dd03c7",
+    "movieId": 1422,
+    "userId": "5cbb570e-7ecd-4eb6-b480-455bd2faba34",
+    "addedAt": "2025-06-09T16:05:52.815Z"
+  }
+]
