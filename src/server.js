@@ -19,13 +19,16 @@ app.get('/', (req, res) => {
 });
 
 const authRoutes = require('./routes/auth');
-app.use('/api/auth', authRoutes);
+app.use('/api', authRoutes);
 
 const authenticate = require('./middlewares/authenticate');
 app.use(authenticate);
 
 const movieRoutes = require('./routes/movies');
 app.use('/api/movies', movieRoutes);
+
+const userRoutes = require('./routes/users');
+app.use('/api/users', userRoutes);
 
 app.use((err, req, res, next) => {
     console.error('ERROR:', err.message);

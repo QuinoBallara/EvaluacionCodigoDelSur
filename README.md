@@ -25,6 +25,7 @@ Joaquín Ballara
     USERS_FILE= Ruta al archivo de usuarios (opcional, por defecto `./data/users.txt`)
     FAVORITES_FILE= Ruta al archivo de favoritos (opcional, por defecto `./data/favorites.txt`)
     BLACKLIST_FILE= Ruta al archivo de blacklist de jti's (opcional, por defecto `./data/blacklist.txt`)
+    MOVIES_FILE= Ruta al archivo de películas (opcional, por defecto `./data/movies.txt`)
     ```
 
 ## Ejecutar la API
